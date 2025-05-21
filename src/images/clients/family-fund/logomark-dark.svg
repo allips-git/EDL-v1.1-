@@ -1,0 +1,19 @@
+<!-- <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="15" cy="18" r="15" fill="#0A0A0A" />
+  <path d="M8.5 10H19.5L21.5 12L19.5 14H8.5V10Z" fill="white" />
+  <path d="M8.5 16H15.5L17.5 18L15.5 20H8.5V16Z" fill="white" />
+  <rect x="8.5" y="22" width="4" height="4" fill="white" />
+</svg> -->
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="36" height="36" viewBox="0 0 36 36">
+  <circle cx="15" cy="18" r="15" fill="#0A0A0A" />
+  <path fill="white" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+  <rect x="8.5" y="22" width="4" height="4" fill="white" />
+</svg> -->
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+
+  <path stroke-linecap="round" fill="white" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+</svg>
+
+
