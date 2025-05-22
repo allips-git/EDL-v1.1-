@@ -47,24 +47,27 @@ function Section({ title, image, children }) {
 
 
 
+
+
 function Values() {
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-gradient-to-b rounded-4xl from-neutral-50 via-neutral-400 to-white">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-linear-to-b from-neutral-50">
         <GridPattern
-          className="absolute inset-0 h-full w-full mask-[linear-gradient(to_bottom_left,black_40%,transparent_90%)] fill-neutral-50"
+          className="absolute inset-0 h-full w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-100 stroke-neutral-950/5"
           yOffset={-270}
         />
       </div>
 
       <SectionIntro
         eyebrow="Our core technology values"
-        
+       
       >
 
-  <h3 className='my-6 block max-w-5xl text-5xl tracking-tight text-balance text-neutral-950 sm:text-5xl'>제조 경쟁력의 본질은, <br/>
-  기술을 품은 구조입니다.</h3>
-
+        <h4 className='block md:w-[590px] text-4xl font-medium sm:text-5xl mb-8 text-neutral-950'>
+        제조 경쟁력의 본질은, <br/>
+        기술을 품은 구조입니다.
+        </h4>
         <p>
         우리는 공정 설계, 원가 구조, 글로벌 인증 대응까지 고려한 ‘전방위 제조 전략’을 구현한 <br/>
         기술 기업입니다. 다섯 가지 핵심 구조는, 우리가 왜 선택받는지를 증명합니다.
@@ -73,33 +76,22 @@ function Values() {
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem>
-          <p className='font-semibold text-neutral-950'>원천기술.</p>
+          <GridListItem title="원천 기술.">
           Central Glass사의 기반 기술을 도입해, EDL만의 조건에 맞춰 지속적인 개선을 추진합니다. 고정밀 반응과 내수 안정성을 모두 고려한 고도화 기술입니다.
           </GridListItem>
-          <GridListItem>
-          <p className='font-semibold text-neutral-950'>제조 공법.</p>
-          Central Glass사의 기반 기술을 도입해, EDL만의 조건에 맞춰 지속적인 개선을 추진합니다. 고정밀 반응과 내수 안정성을 모두 고려한 고도화 기술입니다.
+          <GridListItem title="제조 공법.">
+          PCI₃/PCI₅ 기반의 이중 공정 대응이 가능해, 고객사 요청에 따라 유연하게 대응할 수 있는 생산 유연성을 확보하고 있습니다.
           </GridListItem>
-          <div>
-          <p className='font-semibold text-neutral-950'></p>
-          </div>
-          <GridListItem>
-          <p className='font-semibold text-neutral-950'>기술력.</p>
+          <GridListItem title="기술력.">
           SHIDA 설비를 기반으로 독자 기술을 더해, 생산 안정성, 공정 효율성, 시험 기간 단축을 모두 실현했습니다.
           </GridListItem>
-          <GridListItem>
-          <p className='font-semibold text-neutral-950'>원가 경쟁력.</p>
+          <GridListItem title="원가 경쟁력.">
           LiF 내재화(In-House)를 통해 원자재의 약 40%를 자급하고 있으며, IRA 요건 충족으로 세제 혜택까지 확보할 수 있는 구조입니다.
           </GridListItem>
-
-          <GridListItem>
-          <p className='font-semibold text-neutral-950'>인증 및 현지화.</p>
+          <GridListItem title="인증 및 현지화.">
           IRA 준수 (비중국산 원료), Utility 안정지역 확보, 장기적 원자재 현지화 대응까지 모든 밸류체인이 기술 위에 연결되어 있습니다.
           </GridListItem>
           
-          
-         
         </GridList>
       </Container>
     </div>

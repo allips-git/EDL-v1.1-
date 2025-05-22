@@ -37,7 +37,7 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        className="mt-24 sm:mt-32 lg:mt-40"
+        className="mt-24 sm:mt-32 lg:mt-[300px]"
       >
         <h2 className='block md:w-[590px] text-4xl font-medium sm:text-5xl text-neutral-950 mb-6'>
           <span className='text-[#c5013d]'>EDL</span>이 기술로 여는 미래
@@ -109,10 +109,10 @@ function Services() {
       <Container className="mt-16">
         <div className="lg:flex lg:items-center lg:justify-end">
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
-            <FadeIn className="w-135 flex-none lg:w-180">
+            <FadeIn className="w-135 flex-none lg:w-160 ">
               <StylizedImage
                 src={imageLaptop}
-                sizes="(min-width: 1024px) 41rem, 31rem"
+                sizes="(min-width: 1024px) 42rem, 31rem"
                 className="justify-center lg:justify-end"
               />
             </FadeIn>
@@ -186,9 +186,11 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
+        <p className='leading-10'>
+       "EDL은 기존의 한계를 돌파하며, 전해액 산업의 새로운 기준을 만들고 있습니다. <br/>
+        단순한 공급이 아닌, 산업의 방향을 함께 설계하는 파트너입니다."
+
+        </p>
       </Testimonial>
 
       <Services />

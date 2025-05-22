@@ -53,22 +53,25 @@ function Header({
   return (
     <Container>
       <div className="flex items-center justify-between">
-        <Link
+      <Link
           href="/"
           aria-label="Home"
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <Logomark
-            className="sm:hidden"
-            invert={invert}
-            filled={logoHovered}
-          />
-          {/* <Logo
-            className="hidden h-8 sm:block"
-            invert={invert}
-            filled={logoHovered}
-          /> */}
+          {invert ? (
+            <Logo
+              className="sm:hidden"
+              invert={invert}
+              filled={logoHovered}
+            />
+          ) : (
+            <Logomark
+              className="sm:hidden"
+              invert={invert}
+              filled={logoHovered}
+            />
+          )}
         </Link>
         <div className="flex items-center gap-x-8">
         
@@ -228,12 +231,7 @@ function RootLayoutInner({ children }) {
                       className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
                     />
                   </div>
-                  {/* <div className="sm:border-l sm:border-transparent sm:pl-16">
-                    <h2 className="font-display text-base font-semibold text-white">
-                      Follow us
-                    </h2>
-                    <SocialMedia className="mt-6" invert />
-                  </div> */}
+                 
                 </div>
               </Container>
             </div>

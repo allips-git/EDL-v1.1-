@@ -332,7 +332,7 @@ export default async function Work() {
             </figcaption>
       </Testimonial>
 
-      <div className="mt-40 rounded-4xl bg-[#52565a] py-24 sm:mt-4 lg:mt-40 lg:mb-4 lg:py-32">
+      <div className="mt-40 rounded-4xl bg-[#666666] py-24 sm:mt-4 lg:mt-40 lg:mb-4 lg:py-32">
       <SectionIntro
         eyebrow="Our culture"
     
@@ -364,21 +364,22 @@ export default async function Work() {
       </Container>
     </div>
 
-    <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-16 lg:pt-40">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden bg-gradient-to-b rounded-4xl from-neutral-50 via-neutral-400 to-white">
+
+    <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-linear-to-b from-neutral-50">
         <GridPattern
-          className="absolute inset-0 h-full w-full mask-[linear-gradient(to_bottom_left,black_40%,transparent_90%)] fill-neutral-200"
+          className="absolute inset-0 h-full w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-100 stroke-neutral-950/5"
           yOffset={-270}
         />
       </div>
 
       <SectionIntro
         eyebrow="조직도"
-        
+       
       >
-
           <Border></Border>
-  
+
+      
       </SectionIntro>
 
       <Container className="mt-24">

@@ -27,7 +27,7 @@ import {Testimonial} from "@/components/Testimonial"
 
 function Culture() {
   return (
-    <div className="mt-40 rounded-4xl bg-[#52565a] py-24 sm:mt-32 lg:my-40 lg:py-32">
+    <div className="mt-40 rounded-4xl bg-[#666666] py-24 sm:mt-32 lg:my-40 lg:py-32">
       <SectionIntro
         eyebrow="Project strategy"
     

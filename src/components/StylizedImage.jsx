@@ -34,8 +34,8 @@ export function StylizedImage({ shape = 0, className, ...props }) {
       <svg viewBox={`0 0 ${width} ${height}`} fill="none" className="h-full">
         <g clipPath={`url(#${id}-clip)`} className="group">
           <g className="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105">
-            <foreignObject width={width} height={height}>
-             <img src="/images/techBg.jpg" alt="" style={{width:"655px", height:"680px"}}/>
+            <foreignObject width="660px" height={height}>
+             <img src="/images/techBg.jpg" alt="" style={{width:"755px", height:"680px"}}/>
             </foreignObject>
           </g>
           <use

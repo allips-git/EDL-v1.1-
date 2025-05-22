@@ -786,6 +786,12 @@
   .bg-\[\#52565a\] {
     background-color: #52565a;
   }
+  .bg-\[\#656565\] {
+    background-color: #656565;
+  }
+  .bg-\[\#666666\] {
+    background-color: #666666;
+  }
   .bg-\[\#C5013D\] {
     background-color: #C5013D;
   }
@@ -1104,6 +1110,18 @@
   }
   .text-\[20px\] {
     font-size: 20px;
+  }
+  .leading-8 {
+    --tw-leading: calc(var(--spacing) * 8);
+    line-height: calc(var(--spacing) * 8);
+  }
+  .leading-10 {
+    --tw-leading: calc(var(--spacing) * 10);
+    line-height: calc(var(--spacing) * 10);
+  }
+  .leading-12 {
+    --tw-leading: calc(var(--spacing) * 12);
+    line-height: calc(var(--spacing) * 12);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -2222,6 +2240,11 @@
       margin-top: 300px;
     }
   }
+  .lg\:mt-\[400px\] {
+    @media (width >= 64rem) {
+      margin-top: 400px;
+    }
+  }
   .lg\:mb-4 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 4);
@@ -2260,6 +2283,11 @@
   .lg\:w-148 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 148);
+    }
+  }
+  .lg\:w-160 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 160);
     }
   }
   .lg\:w-180 {
@@ -2728,6 +2756,10 @@ body {
   inherits: false;
   initial-value: 100%;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -2900,6 +2932,7 @@ body {
       --tw-gradient-from-position: 0%;
       --tw-gradient-via-position: 50%;
       --tw-gradient-to-position: 100%;
+      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
