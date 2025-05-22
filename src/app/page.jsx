@@ -187,7 +187,8 @@ export default async function Home() {
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
         <p className='leading-10'>
-       "EDL은 기존의 한계를 돌파하며, 전해액 산업의 새로운 기준을 만들고 있습니다. <br/>
+       "EDL은 기존의 한계를 돌파하며, <br/>
+       전해액 산업의 새로운 기준을 만들고 있습니다. <br/>
         단순한 공급이 아닌, 산업의 방향을 함께 설계하는 파트너입니다."
 
         </p>
