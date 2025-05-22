@@ -37,9 +37,11 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        title="EDL이 기술로 여는 미래"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
+        <h2 className='block md:w-[590px] text-4xl font-medium sm:text-5xl text-neutral-950 mb-6'>
+          <span className='text-[#c5013d]'>EDL</span>이 기술로 여는 미래
+        </h2>
         <p>
         전기차 배터리 시장의 급성장과 IRA(미국 인플레이션 감축법) 등 지정학적 리스크 속에서,<br/>
         EDL은 단순한 소재 공급을 넘어, 현지 생산 중심의 글로벌 JV 체계를 구축하고 있습니다. 
@@ -92,10 +94,14 @@ function Services() {
   return (
     <>
       <SectionIntro
-        eyebrow="Services"
-        title="EDL은 기술, 공급망, 전략을 기반으로 전해액 생산의 변화를 주도합니다."
+        eyebrow="Technology"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
+
+        <h2 className='block md:w-[590px] text-4xl font-medium sm:text-5xl text-neutral-950 mb-6'>
+          <span className='text-[#c5013d]'>EDL</span>은 기술, 공급망, 전략을 기반으로 <br/>
+          전해액 생산의 변화를 주도합니다.
+        </h2>
         <p>
         이디엘은 엔켐의 자회사로서 이차전지 배터리 전해액의 원재료인 고순도 리튬염을 생산하는 기업입니다. <br/>
         우리의 기술은 공장에서 시작되지만, 그 파급력은 산업 전반으로 이어집니다. <br/>
@@ -162,7 +168,7 @@ export default async function Home() {
     <RootLayout>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="">
-          <h1 className="text-3xl font-bold tracking-tight text-black sm:text-7xl" style={{fontFamily: "'Noto Sans KR'"}}>
+          <h1 className="text-3xl font-bold tracking-tight text-black sm:text-7xl">
             시장을 선도하는 최적의 <br/>  글로벌 생산체제를 구축합니다
           </h1>
           <p className="mt-6 text-sm sm:text-lg text-neutral-600">
@@ -189,7 +195,6 @@ export default async function Home() {
 
       <Services />
 
-      <ContactSection />
     </RootLayout>
   )
 }

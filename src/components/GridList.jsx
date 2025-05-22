@@ -38,7 +38,7 @@ export function GridListItem({ title, children, className, invert = false }) {
               invert ? 'text-white' : 'text-neutral-950',
             )}
           >
-            {title}.
+            {title}
           </strong>{' '}
           {children}
         </Border>

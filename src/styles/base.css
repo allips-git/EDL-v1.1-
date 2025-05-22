@@ -1,8 +1,12 @@
 @font-face {
-  font-family: 'Mona Sans';
-  font-weight: 200 900;
+  font-family: 'Pretendard Variable';
+  font-weight: 45 920;
   font-display: block;
   font-style: normal;
   font-stretch: 75% 125%;
-  src: url('../fonts/Mona-Sans.var.woff2') format('woff2');
+  src: url('../fonts/PretendardVariable.woff2') format('woff2');
+}
+
+body {
+  background-color: #c5013d;
 }

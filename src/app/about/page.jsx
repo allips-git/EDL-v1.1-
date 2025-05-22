@@ -27,13 +27,16 @@ import {Testimonial} from "@/components/Testimonial"
 
 function Culture() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className="mt-24 rounded-4xl bg-[#6D7176] py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
         eyebrow="Project strategy"
-        title="BEDL은 국내 전해액 원재료의
-SPECIAL 공급망을 설계합니다."
+    
         invert
       >
+           <h2 className='block md:w-[590px] text-4xl font-medium sm:text-5xl text-neutral-200 mb-6'>
+          <span className='text-[#c5013d]'>EDL</span>은 국내 전해액 원재료의
+          SPECIAL 공급망을 설계합니다.
+        </h2>
         <p>
         EDL은 단순한 생산 공장을 넘어 우리는 Enchem, 중앙첨단소재을 기반을 두고, <br/>
         성장 모멘텀을 구축하여I RA 대응, 글로벌 공급처 분산, 관세 절감까지 공급을 "전략적으로" 만들어 갑니다.

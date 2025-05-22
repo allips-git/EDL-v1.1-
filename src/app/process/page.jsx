@@ -9,6 +9,7 @@ import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { TagList, TagListItem } from '@/components/TagList'
+import { Border } from '@/components/Border'
 import imageLaptop from '@/images/laptop.jpg'
 import imageMeeting from '@/images/meeting.jpg'
 import imageWhiteboard from '@/images/whiteboard.jpg'
@@ -178,52 +179,55 @@ function Deliver() {
 function Values() {
   return (
     <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-40 lg:pt-40">
-      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-linear-to-b from-neutral-50">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-linear-to-b from-neutral-300">
         <GridPattern
-          className="absolute inset-0 h-full w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-100 stroke-neutral-950/5"
+          className="absolute inset-0 h-full w-full mask-[linear-gradient(to_bottom_left,black_40%,transparent_90%)] fill-neutral-50"
           yOffset={-270}
         />
       </div>
 
       <SectionIntro
-        eyebrow="Our values"
-        title="Balancing reliability and innovation"
+        eyebrow="Our core technology values"
+        
       >
+  <h3 className='my-6 block max-w-5xl text-5xl tracking-tight text-balance text-neutral-950 sm:text-5xl'>제조 경쟁력의 본질은, <br/>
+  기술을 품은 구조입니다.</h3>
+
         <p>
-          We strive to stay at the forefront of emerging trends and
-          technologies, while completely ignoring them and forking that old
-          Rails project we feel comfortable using. We stand by our core values
-          to justify that decision.
+        우리는 공정 설계, 원가 구조, 글로벌 인증 대응까지 고려한 ‘전방위 제조 전략’을 구현한 <br/>
+        기술 기업입니다. 다섯 가지 핵심 구조는, 우리가 왜 선택받는지를 증명합니다.
         </p>
       </SectionIntro>
 
       <Container className="mt-24">
         <GridList>
-          <GridListItem title="Meticulous">
-            The first part of any partnership is getting our designer to put
-            your logo in our template. The second step is getting them to do the
-            colors.
+          <GridListItem>
+          <p className='font-semibold text-neutral-950'>원천기술.</p>
+          Central Glass사의 기반 기술을 도입해, EDL만의 조건에 맞춰 지속적인 개선을 추진합니다. 고정밀 반응과 내수 안정성을 모두 고려한 고도화 기술입니다.
           </GridListItem>
-          <GridListItem title="Efficient">
-            We pride ourselves on never missing a deadline which is easy because
-            most of the work was done years ago.
+          <GridListItem>
+          <p className='font-semibold text-neutral-950'>제조 공법.</p>
+          Central Glass사의 기반 기술을 도입해, EDL만의 조건에 맞춰 지속적인 개선을 추진합니다. 고정밀 반응과 내수 안정성을 모두 고려한 고도화 기술입니다.
           </GridListItem>
-          <GridListItem title="Adaptable">
-            Every business has unique needs and our greatest challenge is
-            shoe-horning those needs into something we already built.
+          <div>
+          <p className='font-semibold text-neutral-950'></p>
+          </div>
+          <GridListItem>
+          <p className='font-semibold text-neutral-950'>기술력.</p>
+          SHIDA 설비를 기반으로 독자 기술을 더해, 생산 안정성, 공정 효율성, 시험 기간 단축을 모두 실현했습니다.
           </GridListItem>
-          <GridListItem title="Honest">
-            We are transparent about all of our processes, banking on the simple
-            fact our clients never actually read anything.
+          <GridListItem>
+          <p className='font-semibold text-neutral-950'>원가 경쟁력.</p>
+          LiF 내재화(In-House)를 통해 원자재의 약 40%를 자급하고 있으며, IRA 요건 충족으로 세제 혜택까지 확보할 수 있는 구조입니다.
           </GridListItem>
-          <GridListItem title="Loyal">
-            We foster long-term relationships with our clients that go beyond
-            just delivering a product, allowing us to invoice them for decades.
+
+          <GridListItem>
+          <p className='font-semibold text-neutral-950'>인증 및 현지화.</p>
+          IRA 준수 (비중국산 원료), Utility 안정지역 확보, 장기적 원자재 현지화 대응까지 모든 밸류체인이 기술 위에 연결되어 있습니다.
           </GridListItem>
-          <GridListItem title="Innovative">
-            The technological landscape is always evolving and so are we. We are
-            constantly on the lookout for new open source projects to clone.
-          </GridListItem>
+          
+          
+         
         </GridList>
       </Container>
     </div>
@@ -250,7 +254,7 @@ export default function Process() {
       <Container>
 
 <div className="">
-  <h3 className='my-6 block max-w-5xl font-display text-5xl font-bold tracking-tight text-balance text-neutral-950 sm:text-4xl'>기술 개요</h3>
+  <h3 className='my-6 block max-w-5xl text-5xl tracking-tight text-balance text-neutral-950 sm:text-4xl'>기술 개요</h3>
   <p>
   LiPF₆는 리튬이온 배터리 전해액의 핵심 구성 물질로, 이온 이동성과 전기화학적 안정성을 동시에 만족시켜야 하는 고순도 정제물입니다. <br/>
   EDL은 AHF 기반 합성 공정 및 저수분 환경 반응 조건을 확보해 글로벌 품질 기준에 부합하는 LiPF₆를 공급합니다.
@@ -267,7 +271,10 @@ export default function Process() {
 </Container>
 
 <Container className='mt-[100px]'>
-<h3 className='my-6 block max-w-5xl font-display text-5xl tracking-tight text-balance text-neutral-950 sm:text-4xl'>제조 공정</h3>
+
+  <div className='flex flex-col gap-16 lg:flex-row lg:justify-between'>
+  <div>
+<h3 className='mb-6 block max-w-5xl font-display text-5xl tracking-tight text-balance text-neutral-950 sm:text-4xl'>제조 공정</h3>
 <div className='flex lg:gap-16 flex-col lg:flex-row gap-16'>
   <div>
   <p>
@@ -287,101 +294,13 @@ EDL의 LiPF₆ 생산 공정은 5단계로 명확하게 구분되어 있으면�
   폐수와 폐가스를 최소화하는 친환경 구조까지 포함됩니다.
   </p>
   </div>
-  <section className="w-[431px]">
-        <div className="">
-          <ul className="relative flex flex-col gap-12">
-              <li className="flex gap-4 items-center">
-                  <h1 className="text-[20px] text-[#C5013D] mt-2">원료투입</h1>
-                  <div className="mb-4 mr-4">
-                    <div className="size-5 border-[3px] rounded-full border-gray-500 bg-white absolute z-10 flex items-center justify-center">
-                      <div className="bg-gray-500 rounded-full size-2"></div>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <img src="images/arrow.png" alt="" />
-                  </div>
-                  <div className="flex flex-col gap-8 pt-1 font-medium">
-                    <p className="text-sm"><span className="text-[#c5013d]">01 </span>LiPF6 의 무기질
-                      원료 투입</p>
-                  </div>
-              </li>
-              <li className="flex gap-4 items-center">
-                  <h1 className="text-[20px] text-[#C5013D] w-[69px] text-end mt-2">반응</h1>
-                  <div className="mb-4 mr-4">
-                    <div className="size-5 border-[3px] rounded-full border-gray-500 bg-white absolute z-10 flex items-center justify-center">
-                      <div className="bg-gray-500 rounded-full size-2"></div>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <img src="images/arrow.png" alt="" />
-                  </div>
-                  <div className="flex flex-col gap-8 pt-1 font-medium">
-                    <p className="text-sm"><span className="text-[#c5013d]">02 </span>반응기 내부에 원료들이 반응 할 수 있는 <br/>
-환경을 구성해줘서 원료들이 반응하여 <br/>
-LiPF6로 합성</p>
-                  </div>
-              </li>
-              <li className="flex gap-4 items-center">
-              <h1 className="text-[20px] text-[#C5013D] w-[69px] text-end mt-2">정제</h1>
-                  <div className="mb-4 mr-4">
-                    <div className="size-5 border-[3px] rounded-full border-gray-500 bg-white absolute z-10 flex items-center justify-center">
-                      <div className="bg-gray-500 rounded-full size-2"></div>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <img src="images/arrow.png" alt="" />
-                  </div>
-                  <div className="flex flex-col gap-8 pt-1 font-medium">
-                    <p className="text-sm"><span className="text-[#c5013d]">03 </span>초기 반응된 LiPF6 내부에는 미반응 <br/>
-                    물질등이 많이 포함되기에 정제를 통해 순수한  <br/>
-                    LiPF6만 획득</p>
-                  </div>
-              </li>
-              <li className="flex gap-4 items-center">
-              <h1 className="text-[20px] text-[#C5013D] w-[69px] text-end mt-2">결정화</h1>
 
-                  <div className="mb-4 mr-4">
-                    <div className="size-5 border-[3px] rounded-full border-gray-500 bg-white absolute z-10 flex items-center justify-center">
-                      <div className="bg-gray-500 rounded-full size-2"></div>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <img src="images/arrow.png" alt="" />
-                  </div>
-                  <div className="flex flex-col gap-8 pt-1 font-medium">
-                    <p className="text-sm"><span className="text-[#c5013d]">04 </span>액체상태의 LiPF6를 저온에서 결정을 <br/>
-                    이룰 수 있도록 하여 소금, 설탕과 같이 결정화</p>
-                  </div>
-              </li>
-              
-              <li className="flex gap-4 items-center">
-              <h1 className="text-[20px] text-[#C5013D] w-[69px] text-end mt-2">제품화</h1>
-
-                  <div className="mb-4 mr-4">
-                    <div className="size-5 border-[3px] rounded-full border-gray-500 bg-white absolute z-10 flex items-center justify-center">
-                      <div className="bg-gray-500 rounded-full size-2"></div>
-                    </div>
-                  </div>
-                  <div className="flex items-center">
-                    <img src="images/arrow.png" alt="" />
-                  </div>
-                  <div className="flex flex-col gap-8 pt-1 font-medium">
-                    <p className="text-sm"><span className="text-[#c5013d]">05</span> 결정화가 완료된 LiPF6 건조,결정화가 <br/>
-                     완료된
-                    LiPF6 건조, 캐니스터에 충전하여 <br/>
-                    포장 후 제품화 </p>
-                  </div>
-              </li>
-              
-              <div className='w-[1px] h-[470px] bg-[#c5013d] absolute top-[10px] left-[94px]'></div>
- 
-          </ul>
-
-        </div>
-
-      </section>
+  </div>
 
 </div>
+  <img src="/images/tech.png" alt="" />
+    
+  </div>
 
 
 </Container>
@@ -394,9 +313,139 @@ LiPF6로 합성</p>
         <Deliver />
 </div> */}
 
+
+<Container className='mt-[100px]'>
+        <div className='flex flex-col justify-between items-start lg:flex-row'>
+          <div className='flex flex-col gap-8'>
+
+
+            <Border className="grid gap-x-8 gap-y-8 pt-2">
+               
+                <div className="col-span-full flex gap-24 lg:col-span-2 lg:max-w-2xl">
+                  <p className="font-display font-medium text-neutral-950 w-[73.05px]">
+                  합성방식
+                  </p>
+                  <div className="space-y-6 text-base text-neutral-600">
+                  액상 PCI₃ & 고상 PCI₅ 대응 / Continuous & Batch식
+                  </div>
+                </div>
+                 
+            </Border>
+
+            <Border className="grid gap-x-8 gap-y-8 pt-2">
+               
+               <div className="col-span-full flex gap-24 lg:col-span-2 lg:max-w-2xl">
+                 <p className="font-display font-medium text-neutral-950">
+                 결정화 공정
+                 </p>
+                 <div className="space-y-6 text-base text-neutral-600">
+                 5단 Agitator / -40℃ 운전 / 결정 시간 단축 (5hr ↓) <br/>
+                  / 균일한 결정 사이즈 (200~250㎛)
+                 </div>
+               </div>
+                
+           </Border>
+
+           <Border className="grid gap-x-8 gap-y-8 pt-2">
+               
+               <div className="col-span-full flex justify-between gap-24 lg:col-span-2 lg:max-w-2xl">
+                 <p className="font-display font-medium text-neutral-950 w-[73.05px]">
+                 공정제어
+                 </p>
+                 <div className="space-y-6 text-base text-neutral-600">
+                 DCS 자동제어 시스템 / 운전 효율성 20% 향상
+                 </div>
+               </div>
+                
+           </Border>
+
+           <Border className="grid gap-x-8 gap-y-8 pt-2">
+               
+               <div className="col-span-full flex justify-between gap-24 lg:col-span-2 lg:max-w-2xl">
+                 <p className="font-display font-medium text-neutral-950">
+                 정제 & 건조
+                 </p>
+                 <div className="space-y-6 text-base text-neutral-600">
+                 Cone Type Batch 방식 / 폐설정 無 / 고순도 유지
+                 </div>
+               </div>
+                
+           </Border>
+
+           <Border className="grid gap-x-8 gap-y-8 pt-2">
+               
+               <div className="col-span-full flex justify-between gap-24 lg:col-span-2 lg:max-w-2xl">
+                 <p className="font-display font-medium text-neutral-950">
+                 기술 내재화
+                 </p>
+                 <div className="space-y-6 text-base text-neutral-600">
+                 SHIDA 설비 + 자체 기술 혼합 운용 / 전 공정 내재화
+                 </div>
+               </div>
+                
+           </Border>
+
+           <Border className="grid gap-x-8 gap-y-8 pt-2">
+               
+               <div className="col-span-full flex justify-between gap-24 lg:col-span-2 lg:max-w-2xl">
+                 <p className="font-display font-medium text-neutral-950">
+                 원가 경쟁력
+                 </p>
+                 <div className="space-y-6 text-base text-neutral-600">
+                 LiF 내재화(자체공급), IRA 대응 가능 / PF₆ 원자재 수입 최소화
+                 </div>
+               </div>
+                
+           </Border>
+
+           <Border className="grid gap-x-8 gap-y-8 pt-2">
+               
+               <div className="col-span-full flex justify-between gap-24 lg:col-span-2 lg:max-w-2xl">
+                 <p className="font-display font-medium text-neutral-950">
+                 설비 경쟁력
+                 </p>
+                 <div className="space-y-6 text-base text-neutral-600">
+                 PCI₃/PCI₅ 생산 전환 유연성 보유 / Utility 최적화
+                 </div>
+               </div>
+                
+           </Border>
+          </div>
+          {/* <img src="/images/biz.png" alt="" /> */}
+
+          <div>
+          <h3 className='mb-6 block max-w-5xl font-display text-5xl tracking-tight text-balance text-neutral-950 sm:text-4xl'>기술 경쟁력</h3>
+<div className='flex lg:gap-16 flex-col lg:flex-row gap-16'>
+  <div>
+  <p>
+  EDL은 LiPF₆ 제조 전 과정에 걸쳐 설비, 운전 조건, 원료 내재화, IRA 대응까지  <br/>
+  “기술 중심의 통합 생산 시스템”을 확보하고 있습니다.
+  </p>
+
+  <p className='my-10'>
+  원료 단계부터 저수분 환경을 유지하고, <br/>
+  반응기 내부 조건은 고정밀 제어 알고리즘으로 운영되며, <br/>
+  정제/결정화 단계에서는 결정 구조의 일관성과 분산 안정성을 확보합니다.
+  </p>
+
+  <p>
+  EDL은 단순한 제조라인을 넘어서 고순도 제품을 위한 정밀 조건 설계, <br/>
+  실제 수율 최적화, 생산 안정성 확보를 통해 타사 대비 차별화된 기술 경쟁력을 확보합 <br/>
+  니다.
+  </p>
+  </div>
+
+</div>
+          </div>
+
+
+          
+
+         </div>
+      </Container>
+
       <Values />
 
-      <ContactSection />
     </RootLayout>
   )
 }
