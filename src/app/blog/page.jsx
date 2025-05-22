@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
+import TechIcon from "@/images/clients/family-fund/technique.svg"
+import ReIcon from "@/images/clients/family-fund/Shield check.svg"
+import SuIcon from "@/images/clients/family-fund/supply.svg"
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
@@ -29,59 +31,8 @@ export default async function Blog() {
         </p>
       </PageIntro>
 
-      <Container className="mt-[300px] sm:mt-32 lg:mt-40">
-      <h3 className='mb-6 block max-w-5xl font-display text-5xl tracking-tight text-balance text-neutral-950 sm:text-2xl'>핵심가치</h3>
-        {/* <div className="space-y-24 lg:space-y-32">
-          {articles.map((article) => (
-            <FadeIn key={article.href}>
-              <article>
-                <Border className="pt-16">
-                  <div className="relative lg:-mx-4 lg:flex lg:justify-end">
-                    <div className="pt-10 lg:w-2/3 lg:flex-none lg:px-4 lg:pt-0">
-                      <h2 className="font-display text-2xl font-semibold text-neutral-950">
-                        <Link href={article.href}>{article.title}</Link>
-                      </h2>
-                      <dl className="lg:absolute lg:top-0 lg:left-0 lg:w-1/3 lg:px-4">
-                        <dt className="sr-only">Published</dt>
-                        <dd className="absolute top-0 left-0 text-sm text-neutral-950 lg:static">
-                          <time dateTime={article.date}>
-                            {formatDate(article.date)}
-                          </time>
-                        </dd>
-                        <dt className="sr-only">Author</dt>
-                        <dd className="mt-6 flex gap-x-4">
-                          <div className="flex-none overflow-hidden rounded-xl bg-neutral-100">
-                            <Image
-                              alt=""
-                              {...article.author.image}
-                              className="h-12 w-12 object-cover grayscale"
-                            />
-                          </div>
-                          <div className="text-sm text-neutral-950">
-                            <div className="font-semibold">
-                              {article.author.name}
-                            </div>
-                            <div>{article.author.role}</div>
-                          </div>
-                        </dd>
-                      </dl>
-                      <p className="mt-6 max-w-2xl text-base text-neutral-600">
-                        {article.description}
-                      </p>
-                      <Button
-                        href={article.href}
-                        aria-label={`Read more: ${article.title}`}
-                        className="mt-8"
-                      >
-                        Read more
-                      </Button>
-                    </div>
-                  </div>
-                </Border>
-              </article>
-            </FadeIn>
-          ))}
-        </div> */}
+      <Container className="mt-40 sm:mt-32 lg:mt-[300px]">
+      <h3 className='mb-16 block max-w-5xl font-display text-5xl tracking-tight text-balance text-neutral-950 sm:text-2xl'>핵심가치</h3>
 
       <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-28">
  
@@ -91,7 +42,7 @@ export default async function Blog() {
                 <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                   <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
                     <Image
-                      // src={TrustIcon}
+                      src={TechIcon}
                       alt=""
                       className="h-12 w-12 flex-none"
                       unoptimized
@@ -127,7 +78,7 @@ export default async function Blog() {
                 <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                   <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
                     <Image
-                      // src={ExtendIcon}
+                      src={ReIcon}
                       alt=""
                       className="h-12 w-12 flex-none"
                       unoptimized
@@ -163,7 +114,7 @@ export default async function Blog() {
                 <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                   <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
                     <Image
-                      // src={ResIcon}
+                      src={SuIcon}
                       alt=""
                       className="h-12 w-12 flex-none"
                       unoptimized

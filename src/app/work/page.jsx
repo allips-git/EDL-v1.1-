@@ -4,7 +4,9 @@ import TrustIcon from "@/images/clients/family-fund/trust.svg"
 import ExtendIcon from "@/images/clients/family-fund/extend.svg"
 import ResIcon from "@/images/clients/family-fund/res.svg"
 import Logo from "@/images/clients/family-fund/together.png"
-
+import { SectionIntro } from '@/components/SectionIntro'
+import { GridList, GridListItem } from '@/components/GridList'
+import { GridPattern } from '@/components/GridPattern'
 import { Blockquote } from '@/components/Blockquote'
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
@@ -132,17 +134,6 @@ function CaseStudies({ caseStudies }) {
     </Container>
   )
 }
-
-const clients = [
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
-]
 
 
 
@@ -341,6 +332,59 @@ export default async function Work() {
             </figcaption>
       </Testimonial>
 
+      <div className="mt-40 rounded-4xl bg-[#52565a] py-24 sm:mt-4 lg:mt-40 lg:mb-4 lg:py-32">
+      <SectionIntro
+        eyebrow="Our culture"
+    
+        invert
+      >
+           <h2 className='block text-4xl font-medium sm:text-5xl text-neutral-200 mb-6'>
+          책임, 투명성, 존중을 바탕으로, <br/>
+          우리는 같은 방향을 향해 기술을 설계합니다.
+        </h2>
+        <p>
+        EDL은 서로 다른 전문성이 유기적으로 협업하는 환경을 지향합니다.
+        </p>
+      </SectionIntro>
+      <Container className="mt-16">
+        <GridList>
+          <GridListItem title="책임" invert> <br/>
+          각자의 자리에서 결과를 책임지고, 스스로 문제를 해결합니다.  <br/>
+          ‘보고를 기다리는 시간’보다 ‘결과를 만드는 시간’이 중요합니다.
+          </GridListItem>
+          <GridListItem title="투명성" invert> <br/>
+          EDL의 공정도, 협업도 숨기지 않습니다. 모든 정보는 <br/>
+          공유되고, 모든 기술은 이해되어야 더 나아갈 수 있습니다.
+          </GridListItem>
+          <GridListItem title="존중" invert> <br/>
+          우리는 서로의 전문성과 시간, 집중을 존중합니다. <br/>
+          질문이 오가는 조직은 실수가 반복되지 않는 조직입니다.
+          </GridListItem>
+        </GridList>
+      </Container>
+    </div>
+
+    <div className="relative mt-24 pt-24 sm:mt-32 sm:pt-32 lg:mt-16 lg:pt-40">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden bg-gradient-to-b rounded-4xl from-neutral-50 via-neutral-400 to-white">
+        <GridPattern
+          className="absolute inset-0 h-full w-full mask-[linear-gradient(to_bottom_left,black_40%,transparent_90%)] fill-neutral-200"
+          yOffset={-270}
+        />
+      </div>
+
+      <SectionIntro
+        eyebrow="조직도"
+        
+      >
+
+          <Border></Border>
+  
+      </SectionIntro>
+
+      <Container className="mt-24">
+       <img src="/images/organization.png" alt="" />
+      </Container>
+    </div>
     
     </RootLayout>
   )

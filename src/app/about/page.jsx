@@ -27,7 +27,7 @@ import {Testimonial} from "@/components/Testimonial"
 
 function Culture() {
   return (
-    <div className="mt-24 rounded-4xl bg-[#6D7176] py-24 sm:mt-32 lg:mt-40 lg:py-32">
+    <div className="mt-40 rounded-4xl bg-[#52565a] py-24 sm:mt-32 lg:my-40 lg:py-32">
       <SectionIntro
         eyebrow="Project strategy"
     
@@ -194,8 +194,8 @@ export default async function About() {
       <Culture />
 
 
-      <Container className="mt-[100px]">
-      <h2 className="font-display text-2xl font-semibold text-neutral-950 mb-6">
+      <Container className="mt-40">
+      <h2 className="font-display text-2xl font-semibold text-neutral-950 mb-16">
       EDL 프로젝트의 핵심 요소
       </h2>
         <StatList>
@@ -234,8 +234,8 @@ export default async function About() {
         </StatList>
       </Container>
 
-      <Container className="mt-[100px]">
-      <h2 className="font-display text-2xl font-semibold text-neutral-950 mb-6">
+      <Container className="mt-40">
+      <h2 className="font-display text-2xl font-semibold text-neutral-950 mb-16">
       주요 타임라인
       </h2>
         <StatList>

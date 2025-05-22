@@ -53,7 +53,6 @@ function CaseStudies({ caseStudies }) {
             <FadeIn key={caseStudy.href} className="flex">
               <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
                 <h3>
-                  <Link href={caseStudy.href}>
                     <span className="absolute inset-0 rounded-3xl" />
                     <Image
                       src={caseStudy.logo}
@@ -61,7 +60,6 @@ function CaseStudies({ caseStudies }) {
                       className="h-12 w-12"
                       unoptimized
                     />
-                  </Link>
                 </h3>
                 {/* <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
                   <time
