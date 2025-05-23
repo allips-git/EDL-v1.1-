@@ -1,4 +1,4 @@
-// File: /Users/allips_design/Desktop/EDL-v1.1-/src/app/page.jsx
+// File: C:\Users\aberr\Documents\GitHub\EDL-v1.1-\src\app\page.jsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

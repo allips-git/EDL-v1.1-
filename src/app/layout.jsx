@@ -1,4 +1,5 @@
 import '@/styles/tailwind.css'
+import AuthGuard from './AuthGuard';
 
 export const metadata = {
   title: {
@@ -10,7 +11,11 @@ export const metadata = {
 export default function Layout({ children }) {
   return (
     <html lang="ko" className="h-full bg-neutral-950 text-base antialiased">
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col">
+        <AuthGuard>
+          {children}
+        </AuthGuard>
+      </body>
     </html>
   )
 }
