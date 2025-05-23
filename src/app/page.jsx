@@ -1,5 +1,9 @@
+"use client";
+import '@/styles/tailwind.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState, useEffect } from "react";
+import Cookies from "js-cookie";
 
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
@@ -154,13 +158,54 @@ function Services() {
   )
 }
 
-export const metadata = {
-  description:
-    'We are a development studio working at the intersection of design and technology.',
-}
+// export const metadata = {
+//   description:
+//     'We are a development studio working at the intersection of design and technology.',
+// }
 
-export default async function Home() {
-  let caseStudies = (await loadCaseStudies()).slice(0, 3)
+export default function Home() {
+  // let caseStudies = (await loadCaseStudies()).slice(0, 3)
+  let caseStudies = []
+
+  // 로그인 모달 상태 및 인증 체크
+  const [authed, setAuthed] = useState(false);
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  useEffect(() => {
+    if (Cookies.get("edl_auth") === "1") {
+      setAuthed(true);
+    }
+  }, []);
+  const handleLogin = (e) => {
+    e.preventDefault();
+    if (password === "edlpass@250323") {
+      Cookies.set("edl_auth", "1", { expires: 1 });
+      setAuthed(true);
+    } else {
+      setError("비밀번호가 올바르지 않습니다.");
+    }
+  };
+
+  if (!authed) {
+    return (
+      <div style={{ minHeight: "100vh", display: "flex", justifyContent: "center", alignItems: "center", background: "#fff" }}>
+        <form onSubmit={handleLogin} style={{ minWidth: 320, padding: 32, border: "1px solid #eee", borderRadius: 8, background: "#fff", boxShadow: "0 2px 8px #0001" }}>
+          <h2 style={{ marginBottom: 24 }}>로그인</h2>
+          <input
+            type="password"
+            placeholder="비밀번호를 입력하세요"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            style={{ width: "100%", padding: 12, marginBottom: 16, borderRadius: 4, border: "1px solid #ccc" }}
+          />
+          {error && <div style={{ color: "red", marginBottom: 12 }}>{error}</div>}
+          <button type="submit" style={{ width: "100%", padding: 12, borderRadius: 4, background: "#222", color: "#fff", border: "none", fontWeight: "bold" }}>
+            로그인
+          </button>
+        </form>
+      </div>
+    );
+  }
 
   return (
     <RootLayout>

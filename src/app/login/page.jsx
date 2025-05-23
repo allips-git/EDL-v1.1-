@@ -10,7 +10,7 @@ export default function LoginPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password === "edlpass@250323") {
+    if (password === "edlpass@250523") {
       Cookies.set("edl_auth", "1", { expires: 1 });
       router.replace("/");
     } else {

@@ -13,11 +13,11 @@ import { RootLayout } from '@/components/RootLayout'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
 
-export const metadata = {
-  title: 'Our value',
-  description:
-    'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
-}
+// export const metadata = {
+//   title: 'Our value',
+//   description:
+//     'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
+// }
 
 export default async function Blog() {
   let articles = await loadArticles()

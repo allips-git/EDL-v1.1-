@@ -123,7 +123,7 @@ function CaseStudies({ caseStudies }) {
                   <div className="mt-6 space-y-6 text-base text-neutral-600">
                   HF 회수 시스템, 국산 원료의 적극적 도입, <br/>
                   그리고 ISO 기반 공정관리는 단순히 비용이 아니라 존재의 명분입니다. <br/>
-                  우리는 ‘지속 가능한 제조업’의 현실적 정의를 만들어갑니다.
+                  우리는 '지속 가능한 제조업'의 현실적 정의를 만들어갑니다.
                   </div>
                 </div>
                  
@@ -137,14 +137,15 @@ function CaseStudies({ caseStudies }) {
 
 
 
-export const metadata = {
-  title: 'Our Work',
-  description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
-}
+// export const metadata = {
+//   title: 'Our Work',
+//   description:
+//     'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
+// }
 
-export default async function Work() {
-  let caseStudies = await loadCaseStudies()
+export default function Work() {
+  // let caseStudies = await loadCaseStudies()
+  let caseStudies = []
 
   return (
     <RootLayout>
@@ -350,7 +351,7 @@ export default async function Work() {
         <GridList>
           <GridListItem title="책임" invert> 
           각자의 자리에서 결과를 책임지고, 스스로 문제를 해결합니다.  <br/>
-          ‘보고를 기다리는 시간’보다 ‘결과를 만드는 시간’이 중요합니다.
+          '보고를 기다리는 시간'보다 '결과를 만드는 시간'이 중요합니다.
           </GridListItem>
           <GridListItem title="투명성" invert>
           EDL의 공정도, 협업도 숨기지 않습니다. 모든 정보는 <br/>

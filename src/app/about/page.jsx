@@ -62,14 +62,15 @@ function Culture() {
   )
 }
 
-export const metadata = {
-  title: 'project',
-  description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
-}
+// export const metadata = {
+//   title: 'project',
+//   description:
+//     'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+// }
 
-export default async function About() {
-  let blogArticles = (await loadArticles()).slice(0, 2)
+export default function About() {
+  // let blogArticles = (await loadArticles()).slice(0, 2)
+  let blogArticles = []
 
   return (
     <RootLayout>
@@ -308,8 +309,8 @@ export default async function About() {
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"       
       >
-        “EDL은 대규모 리튬솔트 공장을 <br/>
-        세계적 공장으로 자리매김하기 위한 PJT 을 가동 중입니다.”
+        "EDL은 대규모 리튬솔트 공장을 <br/>
+        세계적 공장으로 자리매김하기 위한 PJT 을 가동 중입니다."
 
         <p className='text-lg mt-16'>
         · 글로벌 NO.1 솔트기업 - 리튬염 제조 설비 운영 노하우(기술설비) <br/>
