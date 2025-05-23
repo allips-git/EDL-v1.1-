@@ -6,7 +6,7 @@ export function Logomark({ invert = false, filled = false, ...props }) {
   let id = useId()
 
   return (
-    <img src="/images/logo.png" alt='logo' style={{ width: '120px', height: '60px'}}/>
+    <img src="/images/edl_logo.png" alt='logo' style={{ width: '120px', height: '60px'}}/>
 
 
 
@@ -21,7 +21,7 @@ export function Logo({
   ...props
 }) {
   return (
-    <img src="/images/logo_gray.png" alt='logo' style={{ width: '120px', height: '60px'}}/>
+    <img src="/images/edl-logogray.png" alt='logo' style={{ width: '120px', height: '60px'}}/>
 
   )
 }

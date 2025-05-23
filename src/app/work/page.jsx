@@ -328,7 +328,7 @@ export default async function Work() {
         "저희는 엔켐과 중앙첨단소재가 함께합니다"
 
         <figcaption className="mt-10">
-              <Image src={Logo}></Image>
+             <img src="/images/together.png" alt="chuang,enchem" />
             </figcaption>
       </Testimonial>
 
@@ -348,15 +348,15 @@ export default async function Work() {
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="책임" invert> <br/>
+          <GridListItem title="책임" invert> 
           각자의 자리에서 결과를 책임지고, 스스로 문제를 해결합니다.  <br/>
           ‘보고를 기다리는 시간’보다 ‘결과를 만드는 시간’이 중요합니다.
           </GridListItem>
-          <GridListItem title="투명성" invert> <br/>
+          <GridListItem title="투명성" invert>
           EDL의 공정도, 협업도 숨기지 않습니다. 모든 정보는 <br/>
           공유되고, 모든 기술은 이해되어야 더 나아갈 수 있습니다.
           </GridListItem>
-          <GridListItem title="존중" invert> <br/>
+          <GridListItem title="존중" invert> 
           우리는 서로의 전문성과 시간, 집중을 존중합니다. <br/>
           질문이 오가는 조직은 실수가 반복되지 않는 조직입니다.
           </GridListItem>

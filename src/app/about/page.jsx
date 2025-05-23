@@ -73,7 +73,7 @@ export default async function About() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="project" title="사업영역">
+      <PageIntro eyebrow="project" title="사업소개">
         <p className='mb-[300px]'>
         EDL은 전해액 핵심 원료인 LiPF₆의 안정적인 공급을 위해, 새만금 국가산단에 연 20,000톤 규모의 
         공장을 설계하고 증설 중입니다. 단계형으로 설계된 확장형 구조를 통해, 기술, 생산, 공급망까지 <br />

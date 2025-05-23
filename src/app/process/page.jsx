@@ -185,7 +185,7 @@ EDL의 LiPF₆ 생산 공정은 5단계로 명확하게 구분되어 있으면�
 
             <Border className="grid gap-x-8 gap-y-8 pt-2">
                
-                <div className="col-span-full flex gap-24 lg:col-span-2 lg:max-w-2xl">
+                <div className="col-span-full flex gap-24 justify-between lg:col-span-2 lg:max-w-2xl">
                   <p className="font-display font-medium text-neutral-950 w-[73.05px]">
                   합성방식
                   </p>
@@ -198,7 +198,7 @@ EDL의 LiPF₆ 생산 공정은 5단계로 명확하게 구분되어 있으면�
 
             <Border className="grid gap-x-8 gap-y-8 pt-2">
                
-               <div className="col-span-full flex gap-24 lg:col-span-2 lg:max-w-2xl">
+               <div className="col-span-full flex justify-between gap-24 lg:col-span-2 lg:max-w-2xl">
                  <p className="font-display font-medium text-neutral-950">
                  결정화 공정
                  </p>
