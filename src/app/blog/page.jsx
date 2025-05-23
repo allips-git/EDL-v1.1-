@@ -20,7 +20,7 @@ import { loadArticles } from '@/lib/mdx'
 // }
 
 export default async function Blog() {
-  let articles = await loadArticles()
+  // let articles = await loadArticles()
 
   return (
     <RootLayout>

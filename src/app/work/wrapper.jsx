@@ -10,9 +10,9 @@ import { loadCaseStudies } from '@/lib/mdx'
 
 export default async function CaseStudyLayout({ caseStudy, children }) {
   let allCaseStudies = await loadCaseStudies()
-  let moreCaseStudies = allCaseStudies
-    .filter(({ metadata }) => metadata !== caseStudy)
-    .slice(0, 2)
+  // let moreCaseStudies = allCaseStudies
+  //   .filter(({ metadata }) => metadata !== caseStudy)
+  //   .slice(0, 2)
 
   return (
     <RootLayout>
