@@ -1,8 +1,7 @@
 {
-  "/about/page": "app/about/page.js",
-  "/login/page": "app/login/page.js",
-  "/work/page": "app/work/page.js",
   "/page": "app/page.js",
-  "/blog/page": "app/blog/page.js",
-  "/process/page": "app/process/page.js"
+  "/environment/page": "app/environment/page.js",
+  "/work/page": "app/work/page.js",
+  "/process/page": "app/process/page.js",
+  "/partner/page": "app/partner/page.js"
 }

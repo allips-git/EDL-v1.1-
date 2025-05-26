@@ -32,6 +32,12 @@ export function Offices({ invert = false, ...props }) {
         <Office name="제천 본사" invert={invert}>
         충북 제천시 바이오밸리로 107
         </Office>
+
+        <Office name="군산 새만금공장(이디엘)" invert={invert}>
+      
+        전북 군산시 새만금산단3로 302
+
+        </Office>
       </li>
     </ul>
   )

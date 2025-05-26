@@ -135,6 +135,10 @@ function Navigation() {
         <NavigationItem href="/process">기술 소개</NavigationItem>
         <NavigationItem href="/blog">WHY EDL?</NavigationItem>
       </NavigationRow>
+      <NavigationRow>
+        <NavigationItem href="/esg">ESG</NavigationItem>
+        <NavigationItem href="/partner">파트너사</NavigationItem>
+      </NavigationRow>
     </nav>
   )
 }

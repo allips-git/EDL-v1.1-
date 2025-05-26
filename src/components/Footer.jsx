@@ -97,6 +97,8 @@ function NewsletterForm() {
       풍세산단5로 17 (용정리 984)
       </p>
       <p className="mt-4 text-sm text-neutral-700">제천 본사 : 충북 제천시 바이오밸리로 107</p>
+      <p className="mt-4 text-sm text-neutral-700">군산 새만금공장(이디엘) :
+      전북 군산시 새만금산단3로 302</p>
     
     </form>
   )
