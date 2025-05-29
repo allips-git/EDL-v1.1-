@@ -1,6 +1,7 @@
 import Jojang from "@/images/jojang.png"
 import Hung from "@/images/hung.png"
 import Pol from "@/images/pol.png"
+import Edl from "@/images/edl.jpeg"
 import Jangga from "@/images/jangga.png"
 import { Blockquote } from '@/components/Blockquote'
 import { ContactSection } from '@/components/ContactSection'
@@ -165,6 +166,7 @@ export default function Process() {
                       alt="한국천안공장"
                     //   className="h-12 w-12 flex-none"
                       unoptimized
+                      className="w-[501px] h-60"
                     />
                  
                   </div>
@@ -257,7 +259,7 @@ export default function Process() {
                   <div className="mt-6 space-y-4 text-base text-neutral-600">
                     <div className='w-full sm:flex justify-between'>
                         <p>주소</p>
-                        <p>13488)
+                        <p className="w-[500px]">13488)
                         경기도 성남시 분당구 대왕판교로712번길 22 (삼평동 696-1번지), 글로벌 R&D센터 B동 3층</p>
                     </div>
                     <div className='w-full sm:flex justify-between'>
@@ -280,11 +282,12 @@ export default function Process() {
               <Border className="grid grid-cols-2 gap-x-8 gap-y-8 pt-16">
                 <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                   <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                    {/* <Image
-                      src={Pan}
-                      alt="한국판교사무실"
+                    <Image
+                      src={Edl}
+                      alt="edl사무실"
                       unoptimized
-                    /> */}
+                      className="h-70"
+                    />
                  
                   </div>
                  
